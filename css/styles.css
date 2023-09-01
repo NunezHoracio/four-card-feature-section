@@ -48,12 +48,13 @@ body{
     font-size: 2.5em;
     font-weight: 200;
     color: var(--Very_Dark_Blue);
+    margin: 12px 0;
 }
 
 .subtitle{
     font-size: 2.5em;
     font-weight: 600;
-    padding-bottom: 1em;
+    padding-bottom: 12px;
     color: var(--Very_Dark_Blue);
 }
 
@@ -126,7 +127,7 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width:800px) {
+@media (max-width: 1154px) {
     body{
         height: auto;
     }
