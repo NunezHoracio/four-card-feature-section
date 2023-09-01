@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Very_Light-Gray);
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cabezera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 1em;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: 200;
+    color: var(--Very_Dark_Blue);
+}
+
+.subtitle{
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+    color: var(--Very_Dark_Blue);
+}
+
+.description{
+    color: var(--Grayish_Blue);
+    line-height: 2em;
+}
+
+.cabezera__description{
+    text-align: center;
+    width: 500px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    border-top: 5px solid;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0px 10px 20px rgba(84, 158, 242, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-card{
+    font-weight: 600;
+    color: var(--Very_Dark_Blue);
+    margin-bottom: 15px;
+}
+
+.card__description{
+    font-size: .9em;
+}
+
+.imagen-container{
+    display: flex;
+    justify-content: end;
+}
+
+.supervisor{
+    border-color: var(--Cyan);
+}
+
+.team-builder{
+    border-color: var(--Red);
+}
+
+.karma{
+    border-color: var(--Orange);
+}
+
+.calculator{
+    border-color: var(--Blue);
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:800px) {
+    body{
+        height: auto;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .cabezera{
+        width: 90%;
+    }
+
+    .title{
+        font-size: 1.5em;
+    }
+
+    .subtitle{
+        font-size: 1.5em;
+    }
+
+    .cabezera__description{
+        width: 100%;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
